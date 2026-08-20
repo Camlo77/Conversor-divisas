@@ -4,23 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conversor</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <h1>Conversor de divisas a CLP</h1>
     <section id="box-interactivo" class="menu">
-        <h2>Pesos en CLP</h2>
-      <input type="number" min="0" id="monto"/>
+      <h2>Seleccionar cantidad a convertir:</h2>
+      <input type="number" min="0" id="monto" />
       <p>Moneda a convertir:</p>
       <select name="divisa" id="divisas">
         <option value="euro">Euro</option>
         <option value="dolar">Dolar</option>
         <option value="uf">UF</option>
-        <option value="libra_cobre">Libra Cobre</option>
       </select>
       <button id="btn-conversion">Conversión</button>
       <span id="resultado-conversion"></span>
     </section>
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
